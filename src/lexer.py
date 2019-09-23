@@ -37,7 +37,7 @@ class lexer(object):
         # Arithmetic Operators
         arit_opera = '+-*/'
 
-        #logical operators
+        #logical operator
         log_op = ['>','<','<=','>=','==']
 
         #assignment operators
