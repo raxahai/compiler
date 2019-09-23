@@ -34,7 +34,7 @@ class lexer(object):
         keywrds = ['False','True','class','def','return','None','continue','break',
         'while','for','not','if','or','pass','and','else','elif','print']
 
-        # Arithmetic Operator
+        # Arithmetic Operators
         arit_opera = '+-*/'
 
         #logical operators
