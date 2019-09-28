@@ -10,5 +10,7 @@ def main():
     # lexer
     lex = lexer.lexer(content)
     token = lex.tokenize()
-    print(token)
+    for tk in token:
+        print(tk)
+
 main()
