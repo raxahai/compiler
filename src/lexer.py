@@ -16,6 +16,8 @@ class lexer(object):
         token_specification = [
             ('Float',   r'\d+\.\d*'),  # decimal number
             ('Integer', r'\d+'),    # Integer number
+            ('comments', r'#[\w ]+'),    #comments
+            ('String', r'(\"|\').+(\"|\')'),    #sequence of char aka string
             ('Compound_assign_op', r'[+\-*/]='),    #compund assignment
             ('ASSIGN',   r'='),           # Assignment operator
             ('ID',       r'\w+'),    # Identifiers
