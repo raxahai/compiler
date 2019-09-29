@@ -9,7 +9,7 @@ class lexer(object):
     def tokenize(self):
         code = self.code
 
-        Token = collections.namedtuple('Token', ['type', 'value', 'line', 'column'])
+        Token = collections.namedtuple('Token', 'kind , value , line , column')
 
         keywords = {'False','True','class','def','return','None','continue','break',
             'while','for','not','if','or','pass','and','else','elif','print'}
