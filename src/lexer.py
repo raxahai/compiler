@@ -46,6 +46,8 @@ class lexer(object):
                 line_num += 1
             elif kind == 'SKIP':
                 continue
+            elif kind == 'comments':
+                continue
             elif kind == 'MISMATCH':
                 raise RuntimeError(f'{value!r} unexpected on line {line_num}')
             yield Token(kind, value, line_num, column)
